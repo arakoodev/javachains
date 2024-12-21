@@ -324,7 +324,7 @@ globalThis.addEventListener = (_eventName, handler) => {
 
 const requestToHandler = (inputReq) => {
     const request = new Request(inputReq.uri, inputReq);
-    console.debug("Request recieved ", JSON.stringify(request));
+    console.debug("Request received ", JSON.stringify(request));
     const event = {
         request,
         response: {},
@@ -380,7 +380,7 @@ function encodeBody(body) {
 //         request,
 //         response: {},
 //         respondWith(res) {
-//             console.log("Response recieved ", res);
+//             console.log("Response received ", res);
 //             this.response = res;
 //         },
 //     };
